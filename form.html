@@ -1,0 +1,78 @@
+<!--If you want to challenge yourself:
+
+    Create a form with multiple fields that accept user input.
+    Add two separate sets of radio buttons or checkboxes.
+    Search how to add a placeholder (hint) to an input field.
+     A placeholder shows up when the field has no value,
+      it disappears after the user types or selects something in the field.
+-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+        
+    <form action="/form.html" method="post">
+        <h1>This is self-evaluation form, please fill accordingly</h1>
+    <div>
+            <label for="name">Type your name here</label>
+            <input id="name" value="name" type="text" name="yourself" >
+            <br>
+            <br>
+    </div>
+      
+    <div>
+            <label for="age">Enter your age</label>
+            <input type="number" name="name" id="age" max="100" min="1">
+            <br>
+            <br>
+    </div>
+       
+    <div>
+            <label for="school">Enter the name of the school which you study in</label>
+            <input type="text" id="school" name="name">
+            <br>
+            <br>
+    </div>
+        
+    <div>
+            <label for="place">Select the country you live in</label>
+            <select name="place" id="place">
+                <option value="india">India</option>
+                <option value="nepal">Nepal</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="united-states">United States</option>
+                <option value="england">England</option>
+                <option value="germany">Germany</option>
+                <option value="hungary">Hungary</option>
+                <option value="dubai">Dubai</option>
+            </select>
+    </div>
+        <br>
+        <br>
+    <div>
+        <span>Which one do you like the most</span>
+        <br>
+        <input type="radio" name="social-media" id="social-media" value="instagram">
+        <label for="social-media" >Instagram</label>
+        <br>
+        <input type="radio" name="social-media" id="social-media1" value="facebook">
+        <label for="social-media1">FaceBook</label>
+        <br>
+        <input type="radio" name="social-media" id="social-media2" value="twitter">
+        <label for="social-media2">Twitter</label>
+        <br>
+        <input type="radio" name="social-media" id="social-media3">
+        <label for="social-media3">SnapChat</label>
+    </div>
+         <br>
+    
+<!--Now only need to add some more details about a person and submit the form-->
+</form>
+    
+    
+</body>
+</html>
