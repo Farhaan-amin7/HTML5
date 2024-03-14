@@ -15,48 +15,63 @@
     </head>
     
         
-    <form action="/form.html" method="post">
-        <h1>This is self-evaluation form, please fill accordingly</h1>
+    <form action="mailto:farhaanamin2020@gmail.com" method="POST">
+       <center> <h1>This is self-evaluation form, please fill accordingly</h1></center> 
     <div>
-            <label for="name">Type your name here</label>
-            <input id="name" value="name" type="text" name="yourself" >
+            <label for="name">What is your name</label>
+            <input id="name" type="text" name="yourname" placeholder="eg - Jhon" required minlength="3" maxlength="20" pattern="[a-zA-Z]+">
+          
             <br>
             <br>
     </div>
       
     <div>
-            <label for="age">Enter your age</label>
-            <input type="number" name="name" id="age" max="100" min="1">
+            <label for="yourage" >Enter your age</label>
+            <input type="number" name="age" id="yourage" min="1" max="75"  placeholder="Enter numbers only">
             <br>
             <br>
     </div>
+    <div>
+        <label for="gender">Select your gender</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="rather-not-say">Rather not say</option>
+        </select>
+    </div>
+    <br>
        
     <div>
             <label for="school">Enter the name of the school which you study in</label>
-            <input type="text" id="school" name="name">
+            <input type="text" id="school" name="nameoftheschool" placeholder="school-name">
             <br>
             <br>
     </div>
-        
-    <div>
-            <label for="place">Select the country you live in</label>
-            <select name="place" id="place">
+        <div>
+  
+            <label for="placelivein">In which country do you live in</label>
+            <input list="live-place" name="placeyoulivein" id="placelivein" placeholder="eg - America">
+            <datalist id="live-place">
                 <option value="india">India</option>
                 <option value="nepal">Nepal</option>
                 <option value="bhutan">Bhutan</option>
-                <option value="united-states">United States</option>
+                <option value="united States">United States</option>
                 <option value="england">England</option>
                 <option value="germany">Germany</option>
                 <option value="hungary">Hungary</option>
                 <option value="dubai">Dubai</option>
-            </select>
-    </div>
-        <br>
-        <br>
+                <option value="belgium">Belgium</option>
+                <option value="china">China</option>
+                <option value="denmark">Denmark</option>
+                <option value="finland">Finland</option>
+                <option value="luxembourg">Luxembourg</option>
+            </datalist>
+        </div>
+       
     <div>
-        <span>Which one do you like the most</span>
+        <span>Which one do you like the most:</span>
         <br>
-        <input type="radio" name="social-media" id="social-media" value="instagram">
+        <input type="radio" name="social-media" id="social-media" value="instagram" >
         <label for="social-media" >Instagram</label>
         <br>
         <input type="radio" name="social-media" id="social-media1" value="facebook">
@@ -68,10 +83,47 @@
         <input type="radio" name="social-media" id="social-media3">
         <label for="social-media3">SnapChat</label>
     </div>
-         <br>
+        <br>
+    <div>
+        <label for="favfood">Select your favorite food</label>
+        <select name="favfood" id="favfood">
+            <option value="biryani">Chicken Biryani</option>
+            <option value="curry">Curry</option>
+            <option value="tandoori-chicken">Tandoori Chicken</option>
+            <option value="chicken-kabab">Chicken Kabab</option>
+            <option value="tandoori-fish">Tandoori Fish</option>
+            <option value="none">None of the above</option>
+
+        </select>
+        
+    </div>
+    <div>
+          <span>Which season do you like the most:</span>
+        <br>
+        <input type="radio" name="season" id="season" value="spring" >
+        <label for="season">Spring</label>
+        
+        <br>
+        <input type="radio" name="season" id="season" value="summer">
+        <label for="season">Summer</label>
+        
+        <br>
+        <input type="radio" name="season" id="season" value="fall">
+        <label for="season">Fall</label>
+        
+        <br>
+        <input type="radio" name="season" id="season" value="winter"> 
+        <label for="season">Winter</label>
+    </div>
+    <div>
+        <p>Describe yourself here:</p>
+        <textarea name="describetext" id="textonly" cols="50" rows="5" placeholder="Enter your thoughts here"></textarea>
+    </div>
+    <input type="submit" name="submitForm" id="formsubmit" value="Submit Form">
     
 <!--Now only need to add some more details about a person and submit the form-->
 </form>
+        
     
     
 </body>
