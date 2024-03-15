@@ -16,15 +16,33 @@
     
         
     <form action="mailto:farhaanamin2020@gmail.com" method="POST">
-       <center> <h1>This is self-evaluation form, please fill accordingly</h1></center> 
-    <div>
+       <header> 
+            <h1>This is self-evaluation form, please fill accordingly</h1>
+                <nav><a href="#Home">Home</a></nav>
+                <nav><a href="#Menu">Menu</a></nav>
+        </header>
+        <main>
             <label for="name">What is your name</label>
             <input id="name" type="text" name="yourname" placeholder="eg - Jhon" required minlength="3" maxlength="20" pattern="[a-zA-Z]+">
           
             <br>
             <br>
     </div>
-      
+    <!--
+    <section>
+        <h1>Some facts about Kashmir</h1>
+            <article>
+                <h1>Kashmiris</h1>
+                    <p>
+                        The Kashmiris of Kashmir Valley are largely Muslims, with a few Hindus, Sikhs and Buddhists.
+                        Small groups of Gujjars and Bakarwals live along the mountains. <br>
+                        Commonly spoken languages are Kashmiri and Urdu, though many speak decent English, like a second language.
+                    </p>
+            </article>
+    </section>
+    -->
+    
+
     <div>
             <label for="yourage" >Enter your age</label>
             <input type="number" name="age" id="yourage" min="1" max="75"  placeholder="Enter numbers only">
@@ -40,6 +58,9 @@
         </select>
     </div>
     <br>
+    <audio controls>
+        <source src="/drums.mp3" type="audio/mp3">
+    </audio>
        
     <div>
             <label for="school">Enter the name of the school which you study in</label>
@@ -48,6 +69,12 @@
             <br>
     </div>
         <div>
+            <figure>
+                <img src="/America2.jpg" height="200" width="200">
+                <figcaption>This is how Germany looks so choose germany</figcaption>
+                <img src="/America.jpg" height="200" width="200">
+                <figcaption>This is how America looks so choose America</figcaption>
+            </figure>
   
             <label for="placelivein">In which country do you live in</label>
             <input list="live-place" name="placeyoulivein" id="placelivein" placeholder="eg - America">
@@ -120,6 +147,10 @@
         <textarea name="describetext" id="textonly" cols="50" rows="5" placeholder="Enter your thoughts here"></textarea>
     </div>
     <input type="submit" name="submitForm" id="formsubmit" value="Submit Form">
+    </main>
+    <footer>
+        <p>Email me at: farhaanamin2020(@)gmail(.)com</p>
+    </footer>
     
 <!--Now only need to add some more details about a person and submit the form-->
 </form>
